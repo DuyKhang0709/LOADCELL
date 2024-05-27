@@ -1,0 +1,28 @@
+--cpu=Cortex-M4.fp
+"hx711_test\startup_stm32f407xx.o"
+"hx711_test\delay.o"
+"hx711_test\hx711.o"
+"hx711_test\main.o"
+"hx711_test\stm32f4xx_it.o"
+"hx711_test\stm32f4xx_hal_msp.o"
+"hx711_test\stm32f4xx_hal_tim.o"
+"hx711_test\stm32f4xx_hal_tim_ex.o"
+"hx711_test\stm32f4xx_hal_rcc.o"
+"hx711_test\stm32f4xx_hal_rcc_ex.o"
+"hx711_test\stm32f4xx_hal_flash.o"
+"hx711_test\stm32f4xx_hal_flash_ex.o"
+"hx711_test\stm32f4xx_hal_flash_ramfunc.o"
+"hx711_test\stm32f4xx_hal_gpio.o"
+"hx711_test\stm32f4xx_hal_dma_ex.o"
+"hx711_test\stm32f4xx_hal_dma.o"
+"hx711_test\stm32f4xx_hal_pwr.o"
+"hx711_test\stm32f4xx_hal_pwr_ex.o"
+"hx711_test\stm32f4xx_hal_cortex.o"
+"hx711_test\stm32f4xx_hal.o"
+"hx711_test\stm32f4xx_hal_exti.o"
+"hx711_test\stm32f4xx_hal_uart.o"
+"hx711_test\system_stm32f4xx.o"
+--strict --scatter "hx711_test\hx711_test.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "hx711_test.map" -o hx711_test\hx711_test.axf
